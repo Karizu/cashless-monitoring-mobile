@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d12"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="KELUAR"
+        android:fontFamily="@font/ibmplexsans_bold"
+        android:textColor="@color/primaryDarkBlue"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_below="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/primaryDarkBlue"/>
+
+    <LinearLayout
+        android:layout_below="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d8"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d100"
+            android:gravity="center"
+            android:text="Apakah anda yakin ingin keluar?"
+            android:fontFamily="@font/ibmplexsans_medium"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d45"
+            android:background="@color/primaryDarkBlue"
+            android:textColor="@color/White"
+            android:fontFamily="@font/ibmplexsans_bold"
+            android:text="YA"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

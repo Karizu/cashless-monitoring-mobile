@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutTransaction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d28"
+        android:paddingStart="@dimen/d12"
+        android:paddingEnd="@dimen/d12"
+        android:background="#EFF0F4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:gravity="left|center"
+                android:textColor="@color/NormalColorText"
+                android:fontFamily="@font/ibmplexsans_bold"
+                android:text="01 JAN 2021"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:gravity="right|center"
+                android:textColor="@color/NormalColorText"
+                android:fontFamily="@font/ibmplexsans_bold"
+                android:text="20:08"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d4"
+        android:layout_marginBottom="@dimen/d6"
+        android:paddingStart="@dimen/d12"
+        android:paddingEnd="@dimen/d12"
+        android:paddingTop="@dimen/d6"
+        android:paddingBottom="@dimen/d8"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/transaction_id"
+                android:layout_marginEnd="@dimen/d10"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/s14"
+                android:fontFamily="@font/ibmplexsans_medium"
+                android:text="123456"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/nice_blue"
+                android:textSize="@dimen/s20"
+                android:text="Rp 50.000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Green"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/s13"
+                android:id="@+id/status_transaction"
+                android:fontFamily="@font/ibmplexsans_medium"
+                android:text="BERHASIL"/>
+            <TextView
+                android:id="@+id/amount_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/NormalColorText"
+                android:textSize="@dimen/s13"
+                android:fontFamily="@font/ibmplexsans_regular"
+                android:text="-Rp 50.000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

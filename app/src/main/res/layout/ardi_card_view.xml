@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/White"
+    android:layout_width="match_parent"
+    android:layout_height="190dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="-5dp"
+        app:cardCornerRadius="@dimen/d40"
+        app:cardElevation="@dimen/d10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_header"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="@dimen/d2">
+
+                <LinearLayout
+                    android:id="@+id/btnCekRiwayat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d150"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/d13"
+                    android:layout_marginEnd="@dimen/d13"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    tools:ignore="UnusedAttribute">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d16"
+                            android:orientation="horizontal">
+
+                            <android.widget.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="@dimen/d12"
+                                android:gravity="left"
+                                android:text="Cashless Monitoring"
+                                android:textAllCaps="true"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/White"
+                                android:fontFamily="@font/ibmplexsans_bold"
+                                android:textSize="16sp" />
+
+                            <FrameLayout
+                                android:id="@+id/btnLogout"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/cirlce_menu">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:paddingStart="3dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/logout"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <android.widget.TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ibmplexsans_medium"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d12"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/wallet"
+                                />
+
+                            <android.widget.TextView
+                                android:id="@+id/textViewTID"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_marginStart="6dp"
+                                android:text="Saldo VA BJBS"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/White"
+                                android:fontFamily="@font/ibmplexsans_medium"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <android.widget.TextView
+                            android:id="@+id/tvSaldo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:textStyle="bold"
+                            android:text="Rp -"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/White"
+                            android:fontFamily="@font/ibmplexsans_bold"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

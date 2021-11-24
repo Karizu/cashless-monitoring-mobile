@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutTransaction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d4"
+        android:layout_marginBottom="@dimen/d6"
+        android:paddingStart="@dimen/d12"
+        android:paddingEnd="@dimen/d12"
+        android:paddingTop="@dimen/d6"
+        android:paddingBottom="@dimen/d8"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/transaction_item"
+                android:layout_marginEnd="@dimen/d10"
+                android:layout_height="@dimen/d50"
+                android:gravity="left|center"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/s13"
+                android:fontFamily="@font/ibmplexsans_medium"
+                android:text="123456"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/d100"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/transaction_price_qty"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/NormalColorText"
+                    android:textSize="12sp"
+                    android:text="2 x 50.000"/>
+
+                <TextView
+                    android:id="@+id/sub_total_transaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/NormalColorText"
+                    android:textSize="@dimen/s13"
+                    android:fontFamily="@font/ibmplexsans_bold"
+                    android:text="Rp 100.000"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
